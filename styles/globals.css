@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌑 Base Styles */
+body {
+  @apply bg-[#0b0b14] text-white antialiased;
+}
+
+/* 🎨 Buttons */
+.btn-primary {
+  @apply bg-pink-600 text-white font-medium 
+         rounded-lg px-4 py-2 
+         hover:bg-pink-700 transition;
+}
+
+.btn-secondary {
+  @apply bg-purple-600 text-white font-medium 
+         rounded-lg px-4 py-2 
+         hover:bg-purple-700 transition;
+}
+
+.btn-outline {
+  @apply border border-white/20 text-white rounded-lg px-4 py-2 
+         hover:border-rose-400 hover:text-rose-400 transition;
+}
+
+/* 📦 Cards */
+.card-dark {
+  @apply rounded-lg border border-white/10 bg-black/30 
+         hover:border-rose-500/40 transition;
+}
+
+.card-glass {
+  @apply rounded-lg bg-white/5 backdrop-blur-md border border-white/10 
+         transition;
+}
+
+/* 🖼 Profile Avatar */
+.avatar {
+  @apply rounded-full p-[2px] border border-purple-500;
+}
+
+.avatar img {
+  @apply rounded-full;
+}
+
+/* 🔔 Badge */
+.badge {
+  @apply absolute -top-2 -right-3 bg-rose-500 text-xs font-semibold text-white 
+         rounded-full px-2 py-0.5;
+}
+
+/* 🌀 Header Container */
+.header-gradient {
+  @apply rounded-lg border border-rose-600/30;
+}
+
+.header-inner {
+  @apply rounded-lg bg-[#101020] px-6 py-4 flex items-center justify-between;
+}
